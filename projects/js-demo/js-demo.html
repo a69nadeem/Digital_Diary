@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background: lightgreen;
+        }
+
+        main {
+            background: lightcyan;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+        }
+
+        button {
+            margin: 30px;
+        }
+
+        #amount {
+            padding: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Street cat rescue</h1>
+        <img src="https://placekitten.com/80/80" alt="Sad Hungry Cat">
+        <p>We need cat food</p>
+        <input type="text" id="amount">
+        <div>
+            <button>Click to donate </button>
+        </div>
+    </main>
+    <script>
+        const button = document.querySelector("button")
+        const input = document.querySelector("input")
+
+
+        function handleDonation() {
+            /*alert("It works !!")*/
+            const amount = input.value
+
+            if (amount <= 0) {
+                alert("Thanks for contribution")
+                document.body.style.background = "Red"
+            } else {
+                document.body.style.background = "Gold"
+               /* button.remove()*/
+               location.href = "https://ddg.gg/?q=thanks for +" + amount "$ contribution"
+            }
+        }
+
+        button.addEventListener("click", handleDonation)
+    </script>
+</body>
+
+</html>
