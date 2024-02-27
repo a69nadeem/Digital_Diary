@@ -1,0 +1,8 @@
+my_list = [1,2,3,,'Ahmad', 'Nadeem', {'name':'your_name'}]
+
+my_dict= {
+    'name':'Ahmad',
+    'lastName': 'QUreshi',
+    'age':45
+}
+print(my_list)

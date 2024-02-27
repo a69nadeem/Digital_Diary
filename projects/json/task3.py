@@ -1,0 +1,13 @@
+#x = isinstance("city", (str, float, int, str, list, dict, tuple)) return is true or false
+x1 = isinstance("city", int)
+x2 = isinstance ("city", float)
+x3 = isinstance ("city", bool)
+x4 = isinstance ("city", complex)
+x5 = isinstance ("city", str)
+print()
+print(x1)
+print(x2)
+print(x3)
+print(x4)
+print(x5)
+print()
